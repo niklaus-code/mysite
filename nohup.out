@@ -1,0 +1,20 @@
+INFO  Validating config
+INFO  Start processing
+INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.
+WARN  Trying to "create" Libvirt-通过key访问-Rbd/index.md, but the file already exists!
+Terminated
+INFO  Validating config
+INFO  Created: ~/myapp/source/_posts/libvirt_rbd-1.md
+INFO  Validating config
+INFO  Start processing
+INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.
+INFO  Validating config
+INFO  Start processing
+INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.
+WARN  Trying to "create" about/碎碎念.md, but the file already exists!
+WARN  Trying to "create" 碎碎念/碎碎念.md, but the file already exists!
+WARN  Trying to "create" suisuinian/碎碎念.md, but the file already exists!
+WARN  Trying to "create" _posts/suisuinian/suisuinian.md, but the file already exists!
+WARN  Trying to "create" suisuinian/index.md, but the file already exists!
+WARN  Trying to "create" _posts/read/index.md, but the file already exists!
+WARN  Trying to "create" read/index.md, but the file already exists!
