@@ -130,18 +130,12 @@ info:
   avatar: /img/avatar.png
   discription: To be a better man.
   outlinkitem:
-    - name: twitter
-      outlink: https://twitter.com/username
-      message: Twitter
     - name: envelope
-      outlink: mailto:admin@domain.com
-      message: Email
+      outlink: https://mail.qq.com
+      message: 1309584951@qq.com
     - name: github
-      outlink: https://github.com/username
-      message: Github
-    - name: rss
-      outlink: /atom.xml
-      message: RSS
+      outlink: https://github.com/niklaus-code
+      message: https://github.com/niklaus-code
 
 links:
   #  - title: site-name1
