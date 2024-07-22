@@ -1,6 +1,8 @@
 ---
 title: Nginx日志过滤
 date: 2024-07-17 09:52:12
+tags:
+    - nginx
 ---
 
 ```bash

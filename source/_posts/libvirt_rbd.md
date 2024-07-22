@@ -1,6 +1,8 @@
 ---
 title: Libvirt 通过key访问 Rbd
 date: 2024-07-17 09:24:55
+tags:
+    - 云计算
 ---
 
 来源http://docs.ceph.org.cn/rbd/libvirt/ 定义 secret

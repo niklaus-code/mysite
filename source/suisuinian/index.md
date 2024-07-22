@@ -1,7 +1,12 @@
 ---
-title: 碎碎念
+title:
 date: 2024-07-17 10:18:24
 ---
+
+```bash 
+一个golang基于fuse的跨平台文件系统库
+https://github.com/winfsp/cgofuse
+```
 
 ```bash
 发现一个podman bug， 有时候停掉podman 容器后，查看映射的端口也没有了监听，

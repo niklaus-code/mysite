@@ -2,6 +2,7 @@
 title: Kvm虚拟机迁移问题
 date: 2024-07-16 17:39:50
 tags:
+    - 云计算
 ---
 
 centos6系统，使用centos7 xml模板模板后网卡不能启动

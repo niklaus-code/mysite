@@ -1,6 +1,8 @@
 ---
 title: 前端
 date: 2024-07-17 09:45:24
+tags:
+    - 前端
 ---
 vue v-for 循环顺序不对
 原因：在data目录里面没有定义要循环的数据变量tableData

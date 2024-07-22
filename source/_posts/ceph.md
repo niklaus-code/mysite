@@ -1,6 +1,8 @@
 ---
 title: Ceph常用
 date: 2024-07-17 09:33:35
+tags:
+    - ceph
 ---
 
 osd kerying用cli创建

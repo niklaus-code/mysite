@@ -1,6 +1,8 @@
 ---
 title: python
 date: 2024-07-17 09:46:52
+tags:
+    - python
 ---
 生成器返回文件流
 ```bash

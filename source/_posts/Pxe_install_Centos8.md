@@ -1,6 +1,8 @@
 ---
 title: Pxe 安装 Centos8
 date: 2024-07-17 09:29:37
+tags:
+    - 运维
 ---
 
 dhcp 配置

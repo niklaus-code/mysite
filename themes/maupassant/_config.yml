@@ -120,7 +120,7 @@ menu:
 widgets: ## Seven widgets in sidebar provided: search, info, category, tag, recent_posts, recent_comments and links.
   - search
   - info
-  - category
+#  - category
   - tag
   - recent_posts
   - recent_comments
@@ -128,7 +128,7 @@ widgets: ## Seven widgets in sidebar provided: search, info, category, tag, rece
 
 info:
   avatar: /img/avatar.png
-  discription: To be a better man.
+  discription: 人若无名，便可专心练剑.
   outlinkitem:
     - name: envelope
       outlink: https://mail.qq.com
@@ -138,10 +138,10 @@ info:
       message: https://github.com/niklaus-code
 
 links:
-  #  - title: site-name1
-  #  url: http://www.example1.com/
-  #  src: https://www.example1.com/favicon.ico
-  #  desc: XXX's Blog
+  - title: Ugly Avatar
+    url: http://45.128.222.57:81
+    src: https://www.example1.com/favicon.ico
+    desc: Ugly Avatar
   #- title: site-name2
   #  url: http://www.example2.com/
   #  src: https://www.example1.com/favicon.ico
