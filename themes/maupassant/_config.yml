@@ -110,9 +110,9 @@ menu:
   - page: archive
     directory: archives/
     icon: fa-archive
-  - page: 读书
-    directory: read/
-    icon: fa-archive
+#  - page: 读书
+#    directory: read/
+#    icon: fa-book
   - page: about
     directory: about/
     icon: fa-user
@@ -128,7 +128,7 @@ widgets: ## Seven widgets in sidebar provided: search, info, category, tag, rece
 
 info:
   avatar: /img/avatar.png
-  discription: 人若无名，便可专心练剑.
+  discription: 凛冬将至
   outlinkitem:
     - name: envelope
       outlink: https://mail.qq.com
