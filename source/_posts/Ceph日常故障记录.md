@@ -62,7 +62,17 @@ Not configured to listen on any interfaces!
 
 ```
 
+### 修改纠删码存储 校验块配比可能导致osd节点无法启动
 ```bash
 纠删码模式 千万不要修改存储 校验块配置， 会导致元数据不一致 osd节点无法启动， 如果已经修改导致服务器不来，可以强制改回来
 ceph osd erasure-code-profile set objectfs_crush_rule k=5 m=3 --force
+```
+
+
+### podman ceph-mon 报错 ‘cont mount cgroup in /proc/self/cgroup’
+```bash
+根据systemd 找到启动命令在：
+/var/lib/ceph/9afacb22-6e38-11ed-9d66-8c2a8e673611/mon.node30/unit.run
+
+修改里面的启动启动命令去掉 --cgroups=split
 ```
