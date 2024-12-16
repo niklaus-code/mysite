@@ -59,4 +59,10 @@ Not configured to listen on any interfaces!
 要配置 DHCPDARGS=eth1 绑定网卡 很重要的一点 网络环境要支持。
 也就是说网卡所在 网段 分配IP的网段，
 网络 gw啥的要正常，不然 dhcpserver 报这个错起不来
+
+```
+
+```bash
+纠删码模式 千万不要修改存储 校验块配置， 会导致元数据不一致 osd节点无法启动， 如果已经修改导致服务器不来，可以强制改回来
+ceph osd erasure-code-profile set objectfs_crush_rule k=5 m=3 --force
 ```
