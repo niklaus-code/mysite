@@ -94,3 +94,11 @@ crushtool -c /tmp/decompiled_crush -o /tmp/crush_new
 注入   
 ceph osd setcrushmap -i /tmp/crush_new
 ```
+
+### resize ceph rbd 
+```bash
+rbd resize --image 5faa0840-ef5e-4cd7-a850-2f82878788d2 --size 500G --pool vm
+virsh shutdown vm1
+xfs_growfs /mnt
+```
+
