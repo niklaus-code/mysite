@@ -96,9 +96,8 @@ ceph osd setcrushmap -i /tmp/crush_new
 ```
 
 ### resize ceph rbd 
-### 始终先调整文件系统大小，再调整镜像大小。 例如：
-#### 使用 resize2fs 缩减 ext4 文件系统。
-#### 使用 xfs_growfs 缩减 xfs 文件系统。
+#### !!!不要使用rbd缩减云盘容量，会导致文件系统损坏，恢复缩减之前的容量
+#### 可以重新恢复文件系统
 ```bash
 rbd resize --image 5faa0840-ef5e-4cd7-a850-2f82878788d2 --size 500G --pool vm
 virsh shutdown vm1
