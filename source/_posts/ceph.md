@@ -100,5 +100,18 @@ ceph osd setcrushmap -i /tmp/crush_new
 rbd resize --image 5faa0840-ef5e-4cd7-a850-2f82878788d2 --size 500G --pool vm
 virsh shutdown vm1
 xfs_growfs /mnt
+
+#lvm 扩展
+parted /dev/vda
+resizepart 2 100%
+刷新分区表：
+partprobe /dev/vda
+重新调整物理卷
+pvresize /dev/vda2
+扩展逻辑卷
+lvextend -l +100%FREE /dev/rl/root
+扩展文件系统
+对于 ext4 文件系统： resize2fs /dev/rl/root
+对于 xfs 文件系统：xfs_growfs /
 ```
 
