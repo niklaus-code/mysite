@@ -74,3 +74,35 @@ sudo systemctl restart docker
 ```bash
 docker pull alpine
 ```
+
+### 使用containerd
+```
+sudo mkdir -p /etc/containerd
+containerd config default | sudo tee /etc/containerd/config.toml
+```
+#### 修改 /etc/containerd/config.toml
+```bash
+[plugins."io.containerd.grpc.v1.cri".registry]
+  [plugins."io.containerd.grpc.v1.cri".registry.configs]
+    [plugins."io.containerd.grpc.v1.cri".registry.configs."registry.k8s.io".proxy]
+      http_proxy = "http://127.0.0.1:8118"
+      https_proxy = "http://127.0.0.1:8118"
+      no_proxy = "localhost,127.0.0.1,0.0.0.0,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16"
+
+    [plugins."io.containerd.grpc.v1.cri".registry.configs."k8s.gcr.io".proxy]
+      http_proxy = "http://127.0.0.1:8118"
+      https_proxy = "http://127.0.0.1:8118"
+      no_proxy = "localhost,127.0.0.1,0.0.0.0,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16"
+
+  [plugins."io.containerd.grpc.v1.cri".registry.mirrors]
+    [plugins."io.containerd.grpc.v1.cri".registry.mirrors."registry.k8s.io"]
+      endpoint = ["https://registry.k8s.io"]
+    [plugins."io.containerd.grpc.v1.cri".registry.mirrors."k8s.gcr.io"]
+      endpoint = ["https://k8s.gcr.io"]
+```
+#### 重启sudo systemctl restart containerd
+
+拉取镜像测试
+```bash
+sudo crictl pull registry.k8s.io/pause:3.9
+```
